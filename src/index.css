@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+
+@keyframes slide {
+    0% {
+        transform: rotate(-9deg);
+      }
+      50% {
+        transform: rotate(9deg);
+      }
+      100% {
+        transform: rotate(-9deg);
+      }
+    }
+  
+  .animate-slide {
+    animation: slide 6s ease-in-out infinite;
+  }
+
+  .bg-color{
+    background-color: #5271FF;
+  }
+
+  .Mons{
+    font-family: "Montserrat", sans-serif;
+  }
+  .Nunito{
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .Poppins{
+    font-family: "Poppins", sans-serif;
+  }
+  .play{
+    font-family: "Playfair Display", serif;
+  }
+  ::-webkit-scrollbar{
+    display: none
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+  /* HOLOGRAPHIC CARD EFFECT */
+.holo-card {
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+}
+
+/* White sweep shine */
+.holo-card::before {
+  content: "";
+  position: absolute;
+  top: -150%;
+  left: -150%;
+  width: 300%;
+  height: 300%;
+  background: linear-gradient(
+    115deg,
+    rgba(255,255,255,0) 20%,
+    rgba(255,255,255,0.25) 40%,
+    rgba(255,255,255,0.6) 50%,
+    rgba(255,255,255,0.25) 60%,
+    rgba(255,255,255,0) 80%
+  );
+  transform: rotate(15deg);
+  transition: 0.6s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* RGB soft glow */
+.holo-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 0, 150, 0.12),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(0, 180, 255, 0.12),
+      transparent 70%
+    );
+  opacity: 0;
+  transition: 0.6s ease;
+  pointer-events: none;
+}
+
+/* Hover effect */
+.holo-card:hover {
+  transform: scale(1.04);
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+.holo-card:hover::before {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+}
+
+.holo-card:hover::after {
+  opacity: 1;
+}
+
+
+.testimonial-slider {
+  display: flex;
+  width: max-content;
+  animation: scrollX 30s linear infinite;
+}
+
+.testimonial-wrapper:hover .testimonial-slider {
+  animation-play-state: paused;
+}
+
+@keyframes scrollX {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.skill-pro {
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+/* Smooth Lift */
+.skill-pro:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Subtle spotlight follow cursor */
+.skill-pro::before {
+  content: "";
+  position: absolute;
+
+  .custom-cursor {
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.2s ease, height 0.2s ease, 
+              background 0.2s ease, transform 0.08s ease;
+}
+
+/* Click animation */
+.custom-cursor:active {
+  width: 20px;
+  height: 20px;
+  background: rgba(82, 113, 255, 0.6);
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+  inset: 0;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(255, 255, 255, 0.12),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skill-pro:hover::before {
+  opacity: 1;
+}
+
+/* Professional soft border glow */
+.skill-pro:hover {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+
+.custom-cursor {
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.2s ease, height 0.2s ease, 
+              background 0.2s ease, transform 0.08s ease;
+}
+
+/* Click animation */
+.custom-cursor:active {
+  width: 20px;
+  height: 20px;
+  background: rgba(82, 113, 255, 0.6);
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+
+
+html, body {
+  height: auto;
+  overflow: auto;
+}
