@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Loader from "./components/Loader"; // 👈 import here
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import Loader from "./components/Loader";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
@@ -12,19 +12,17 @@ import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 import { Moon, Sun } from "lucide-react";
 import ProjectDetails from "./components/ProjectDetails";
-
-import ScrollToTop from "./components/ScrollToTop"; // 👈 Make sure this file exists
+import ScrollToTop from "./components/ScrollToTop";
 import Cursor from "./components/Cursor";
 
 function App() {
   const [theme, setTheme] = useState("dark");
   const [loading, setLoading] = useState(true);
-  
 
   useEffect(() => {
     let current = window.scrollY;
     let target = current;
-    let ease = 0.08; // Smoothness
+    let ease = 0.08;
 
     function smoothScroll() {
       current = current + (target - current) * ease;
@@ -32,21 +30,19 @@ function App() {
       requestAnimationFrame(smoothScroll);
     }
 
-    window.addEventListener("scroll", () => {
+    function updateTarget() {
       target = window.scrollY;
-    });
+    }
+
+    window.addEventListener("scroll", updateTarget);
 
     requestAnimationFrame(smoothScroll);
 
     return () => {
-      window.removeEventListener("scroll", () => {});
+      window.removeEventListener("scroll", updateTarget);
     };
   }, []);
 
-
-  
-
-  // Loader timeout
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
@@ -62,23 +58,26 @@ function App() {
     document.documentElement.classList.toggle("dark", theme === "dark");
   }, []);
 
-  if (loading) return <Loader />; // 👈 Show loader first
+  if (loading) return <Loader />;
 
   return (
     <Router>
-      <ScrollToTop /> {/* 👈 Scroll reset works on every route change */}
+      <ScrollToTop />
       <MainContent theme={theme} toggleTheme={toggleTheme} />
     </Router>
   );
 }
 
-// 👇 Separated layout to re-render on route change (for scroll reset reliability)
 function MainContent({ theme, toggleTheme }) {
   const location = useLocation();
 
   return (
-    <div key={location.pathname} className="flex h-screen bg-[#e5e5e5] dark:bg-[#292929] dark:text-white py-3 px-4">
-      <Cursor/>
+    <div
+      key={location.pathname}
+      className="flex h-screen bg-[#e5e5e5] dark:bg-[#292929] dark:text-white py-3 px-4"
+    >
+      <Cursor />
+
       <div className="m-2 flex flex-col absolute z-10">
         <button
           onClick={toggleTheme}
@@ -87,7 +86,9 @@ function MainContent({ theme, toggleTheme }) {
           {theme === "light" ? <Sun size={16} /> : <Moon size={16} />}
         </button>
       </div>
+
       <Sidebar />
+
       <div className="flex-1 flex flex-col">
         <main className="p-6 overflow-y-auto">
           <Routes>
