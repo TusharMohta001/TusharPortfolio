@@ -81,6 +81,9 @@ function MainContent({ theme, toggleTheme }) {
       <div className="m-2 flex flex-col absolute z-10">
         <button
           onClick={toggleTheme}
+
+
+          
           className="w-6 h-6 mb-20 rounded-full bg-[#5271FF] shadow-md cursor-pointer text-white flex items-center justify-center transition-all ease-in-out"
         >
           {theme === "light" ? <Sun size={16} /> : <Moon size={16} />}
