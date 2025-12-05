@@ -1,5 +1,6 @@
 const blogs = [
     {
+      "id":1,
       "title": "React Mastery Guide 2024",
       "image1": "/images/blog1.jpg",
       "date": "2024-01-01",
@@ -25,33 +26,9 @@ const blogs = [
         "JavaScript"
       ]
     },
+   
     {
-      "title": "Tailwinad css with project who to express for this  tailwind css And these all the perfect                      ",
-      "image1": "/images/blog2.jpg",
-      "date": "2024-01-16",
-      "article": "In this blog, we explore TailwindCSS and how it's revolutionizing frontend development in 2025. You\u2019ll build a project, learn best practices, and optimize performance.",
-      "description1": "Deep dive into TailwindCSS fundamentals and advanced use cases.",
-      "description2": "A step-by-step tutorial for building a project using TailwindCSS.",
-      "short_description": "Learn TailwindCSS with hands-on examples.",
-      "long_description": "This blog walks through everything you need to know about TailwindCSS, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/tailwindcss-demo2.jpg",
-      
-      "points": [
-        "Introduction to TailwindCSS",
-        "Project setup and structure",
-        "Best practices and tips",
-        "Performance optimization",
-        "Final project demo"
-      ],
-      "example": "Created a TailwindCSS based application with advanced features.",
-      "video": "https://youtube.com/embed/tailwindcss-tutorial-video2",
-      "tags": [
-        "TailwindCSS",
-        "Vite",
-        "UI"
-      ]
-    },
-    {
+       "id":2,
       "title": "Next.js Mastery Guide 2024",
       "image1": "/images/blog3.png",
       "date": "2024-01-31",
@@ -77,6 +54,7 @@ const blogs = [
       ]
     },
     {
+       "id":3,
       "title": "GSAP Mastery Guide 2025",
       "image1": "/images/blog4.png",
       "date": "2024-02-15",
@@ -102,6 +80,7 @@ const blogs = [
       ]
     },
     {
+       "id":4,
       "title": "JavaScript Mastery Guide 2024",
       "image1": "/images/blog5.png",
       "date": "2024-03-01",
@@ -127,6 +106,7 @@ const blogs = [
       ]
     },
     {
+       "id":5,
       "title": "ResponsiveDesign Mastery Guide 2025",
       "image1": "/images/blog5.png",
       "date": "2024-03-16",
@@ -152,6 +132,7 @@ const blogs = [
       ]
     },
     {
+       "id":6,
       "title": "APIs Mastery Guide 2024",
       "image1": "/images/blog6.png",
       "date": "2024-03-31",
@@ -176,7 +157,9 @@ const blogs = [
         "REST"
       ]
     },
+    
     {
+       "id":7,
       "title": "Firebase Mastery Guide 2025",
       "image1": "/images/blog7.png",
       "date": "2024-04-15",
@@ -202,6 +185,7 @@ const blogs = [
       ]
     },
     {
+       "id":8,
       "title": "ReactNative Mastery Guide 2024",
       "image1": "/images/blog8.png",
       "date": "2024-04-30",
@@ -227,6 +211,7 @@ const blogs = [
       ]
     },
     {
+       "id":9,
       "title": "TypeScript Mastery Guide 2025",
       "image1": "/images/blog9.png",
       "date": "2024-05-15",
@@ -252,6 +237,7 @@ const blogs = [
       ]
     },
     {
+       "id":10,
       "title": "SASS Mastery Guide 2024",
       "image1": "/images/blog10.png",
       "date": "2024-05-30",
@@ -277,6 +263,7 @@ const blogs = [
       ]
     },
     {
+       "id":11,
       "title": "Redux Mastery Guide 2025",
       "image1": "https://example.com/images/redux-cover12.jpg",
       "date": "2024-06-14",
@@ -302,6 +289,7 @@ const blogs = [
       ]
     },
     {
+       "id":12,
       "title": "Node.js Mastery Guide 2024",
       "image1": "https://example.com/images/node.js-cover13.jpg",
       "date": "2024-06-29",
@@ -326,7 +314,35 @@ const blogs = [
         "Backend"
       ]
     },
+     {
+       "id":13,
+      "title": "Tailwinad css with project who to express for this  tailwind css And these all the perfect ",
+      "image1": "/images/blog2.jpg",
+      "date": "2024-01-16",
+      "article": "In this blog, we explore TailwindCSS and how it's revolutionizing frontend development in 2025. You\u2019ll build a project, learn best practices, and optimize performance.",
+      "description1": "Deep dive into TailwindCSS fundamentals and advanced use cases.",
+      "description2": "A step-by-step tutorial for building a project using TailwindCSS.",
+      "short_description": "Learn TailwindCSS with hands-on examples.",
+      "long_description": "This blog walks through everything you need to know about TailwindCSS, including configuration, development workflow, and real-world implementation.",
+      "image2": "https://example.com/images/tailwindcss-demo2.jpg",
+      
+      "points": [
+        "Introduction to TailwindCSS",
+        "Project setup and structure",
+        "Best practices and tips",
+        "Performance optimization",
+        "Final project demo"
+      ],
+      "example": "Created a TailwindCSS based application with advanced features.",
+      "video": "https://youtube.com/embed/tailwindcss-tutorial-video2",
+      "tags": [
+        "TailwindCSS",
+        "Vite",
+        "UI"
+      ]
+    },
     {
+       "id":14,
       "title": "MongoDB Mastery Guide 2025",
       "image1": "https://example.com/images/mongodb-cover14.jpg",
       "date": "2024-07-14",
@@ -352,6 +368,7 @@ const blogs = [
       ]
     },
     {
+       "id":15,
       "title": "Jest Mastery Guide 2024",
       "image1": "https://example.com/images/jest-cover15.jpg",
       "date": "2024-07-29",
@@ -377,6 +394,7 @@ const blogs = [
       ]
     },
     {
+       "id":16,
       "title": "Portfolio Mastery Guide 2025",
       "image1": "https://example.com/images/portfolio-cover16.jpg",
       "date": "2024-08-13",
@@ -402,6 +420,7 @@ const blogs = [
       ]
     },
     {
+       "id":17,
       "title": "GraphQL Mastery Guide 2024",
       "image1": "https://example.com/images/graphql-cover17.jpg",
       "date": "2024-08-28",
@@ -427,6 +446,7 @@ const blogs = [
       ]
     },
     {
+       "id":18,
       "title": "Bootstrap Mastery Guide 2025",
       "image1": "https://example.com/images/bootstrap-cover18.jpg",
       "date": "2024-09-12",

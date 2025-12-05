@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { FcContacts } from "react-icons/fc";
 
 const Services = () => {
+
+
+  const navigate = useNavigate();
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -9,117 +14,118 @@ const Services = () => {
   };
 
   const faqs = [
-    "What is Portfolify?",
-    "How Can I Help You?",
-    "Simple process for workflow?",
-    "Why responsive multi page template?",
-    "Is Portfolify a Multi-purpose template?",
+    {
+      ques: "What is Portfolify?",
+      ans: "A modern, clean, and responsive portfolio template for developers, designers, and freelancers."
+    },
+    {
+      ques: "How Can I Help You?",
+      ans: "I help you showcase your skills, projects, and experience with a professional online presence."
+    },
+    {
+      ques: "Simple process for workflow?",
+      ans: "Choose layout → Add your content → Customize → Publish."
+    },
+    {
+      ques:"Why responsive multi page template?",
+      ans:"Better UX, fast navigation, SEO-friendly, and more professional."
+    },
+    {
+      ques:"Is Portfolify a Multi-purpose template?",
+      ans: "Yes, it works for portfolios, agencies, creatives, startups, and more."
+
+    }
   ];
 
-  const packages = [
+  const workflowSteps = [
     {
-      title: "Basic",
-      price: "$900",
-      features: [
-        "Web Development",
-        "UI/UX Design",
-        "Webflow Development",
-        "Website Optimization",
-        "24/7 Support",
-      ],
-      tag: null,
+      title: "1. Discussion",
+      desc: "We start by understanding your needs, goals, and vision for the project.",
+      icon: "💬",
     },
     {
-      title: "Standard",
-      price: "$2500",
-      features: [
-        "Web Development",
-        "UI/UX Design",
-        "Webflow Development",
-        "Website Optimization",
-        "24/7 Support",
-      ],
-      tag: "Most popular",
+      title: "2. Planning",
+      desc: "Creating wireframes, deciding structure, features, and project roadmap.",
+      icon: "🧩",
     },
     {
-      title: "Premium",
-      price: "$5000",
-      features: [
-        "Web Development",
-        "UI/UX Design",
-        "Webflow Development",
-        "Website Optimization",
-        "24/7 Support",
-      ],
-      tag: null,
+      title: "3. Designing",
+      desc: "UI/UX design using modern tools to ensure smooth and clean experience.",
+      icon: "🎨",
+    },
+    {
+      title: "4. Development",
+      desc: "Turning designs into real, high-performance websites using modern tech.",
+      icon: "⚙️",
+    },
+    {
+      title: "5. Testing",
+      desc: "Fixing bugs, improving speed, and ensuring everything works perfectly.",
+      icon: "🧪",
+    },
+    {
+      title: "6. Deployment",
+      desc: "Website is deployed to hosting, domain connected, and final delivery.",
+      icon: "🚀",
     },
   ];
 
   return (
     <section className="px-4 py-16 md:px-10">
-      {/* Services & Pricing Intro */}
+
+      {/* Intro Section */}
       <div className="text-center mb-16">
-        <h2 className="text-2xl md:text-3xl font-bold">Services & Pricing</h2>
+        <h2 className="text-2xl md:text-3xl font-bold">Services & Workflow</h2>
         <p className="mt-4 max-w-2xl mx-auto">
-          I have 10+ years of development experience building software for the web and
-          mobile devices. You can take a look at my online resume and project
-          portfolio to find out more about my skills and experiences.
+          I provide high-quality development services, from initial concept to final launch.
+          Here's my complete working process.
         </p>
-        <button className="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold">
+        <button
+          onClick={() => window.location.href = "mailto:tusharmohta001@gmail.com"}
+          className="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold"
+        >
           🚀 Hire Me
         </button>
       </div>
 
-      {/* Service Packages */}
+      {/* Workflow Section */}
       <div className="mb-16">
         <h3 className="text-2xl md:text-3xl font-bold border-l-4 border-blue-500 pl-2 mb-4">
-          Service Packages
+          My Working Process
         </h3>
         <p className="mb-8 max-w-3xl">
-          Explore the range of services I provide to help bring your projects to life.
-          From initial concept to final delivery, I am committed to delivering
-          high-quality results tailored to your needs.
+          Here is how I take your idea and turn it into a complete product, step by step.
         </p>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {packages.map((pkg, i) => (
-            <div
+          {workflowSteps.map((step, i) => (
+            <motion.div
               key={i}
-              className="dark:bg-[#2a2a2a] bg-gray-300 p-6 rounded-lg shadow hover:shadow-xl relative transition-all duration-300 hover:-translate-y-1"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              className="dark:bg-[#2a2a2a] bg-gray-300 p-6 rounded-lg shadow hover:shadow-xl transition-all duration-300"
             >
-              {pkg.tag && (
-                <span className="absolute -top-3 right-3 text-xs bg-blue-500 px-2 py-1 rounded-full">
-                  {pkg.tag}
-                </span>
-              )}
-              <h4 className="text-xl font-semibold mb-2">{pkg.title}</h4>
-              <p className="text-3xl font-bold text-blue-400">{pkg.price}</p>
-              <p className="mb-4 text-sm text-gray-400">Per Month</p>
-              <ul className="mb-4 space-y-2">
-                {pkg.features.map((feat, idx) => (
-                  <li key={idx} className="flex items-center gap-2">
-                    <span className="text-blue-400">●</span>
-                    {feat}
-                  </li>
-                ))}
-              </ul>
-              <button className="mt-auto w-full py-2 bg-blue-500 hover:bg-blue-600 rounded-full">
-                → Choose {pkg.title}
-              </button>
-            </div>
+              <div className="text-4xl mb-3">{step.icon}</div>
+              <h4 className="text-xl font-semibold mb-2">{step.title}</h4>
+              <p className="text-sm text-gray-700 dark:text-gray-300">{step.desc}</p>
+            </motion.div>
           ))}
         </div>
 
         <div className="text-center mt-12">
           <h4 className="text-xl md:text-2xl font-semibold mb-2">
-            Want to hire me for custom package?
+            Want to discuss your project?
           </h4>
           <p className="mb-4 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor
-            incididunt ut labore et dolore.
+            Let’s build something amazing together. I respond within 1 hour.
           </p>
-          <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold">
-            🚀 Hire Me
+          <button
+            onClick={() => navigate("/contact")}
+            className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full  font-semibold"
+          >
+             <span className="z-10 flex items-center gap-2 relative">
+            <FcContacts /> Contact Me</span>
           </button>
         </div>
       </div>
@@ -131,8 +137,7 @@ const Services = () => {
             Have any questions?
           </h3>
           <p className="mb-6 max-w-xl">
-            You can use this section to address any queries your potential clients may
-            have.
+            You can use this section to address any queries your potential clients may have.
           </p>
 
           <div className="space-y-4">
@@ -147,7 +152,7 @@ const Services = () => {
                 <div className="flex justify-between items-center">
                   <div className="flex items-center gap-2">
                     <span>❓</span>
-                    <p className="font-medium">{q}</p>
+                    <p className="font-medium">{q.ques}</p>
                   </div>
                   <motion.span
                     animate={{ rotate: openIndex === idx ? 180 : 0 }}
@@ -158,7 +163,6 @@ const Services = () => {
                   </motion.span>
                 </div>
 
-                {/* Animated Answer */}
                 <AnimatePresence>
                   {openIndex === idx && (
                     <motion.div
@@ -166,11 +170,10 @@ const Services = () => {
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      transition={{ duration: 0.3 }}
                     >
                       <p className="mt-2 text-sm text-gray-400">
-                        This is a sample answer to the question: "{q}". Replace it with
-                        your actual FAQ content.
+                        {q.ans}
                       </p>
                     </motion.div>
                   )}
@@ -182,7 +185,7 @@ const Services = () => {
 
         <div className="hidden md:block mt-20">
           <img
-            src="./public/images/FAQ.png"
+            src="/images/FAQ.png"
             alt="FAQ illustration"
             className="w-full h-auto rounded-lg"
           />

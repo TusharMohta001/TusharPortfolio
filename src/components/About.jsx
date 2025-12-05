@@ -59,28 +59,28 @@ const About = () => {
   const testimonials = [
     {
       text: "Tushar created our website with stunning animations and perfect UI!",
-      name: "Rahul Verma",
-      avatar: "https://i.pravatar.cc/150?img=32"
+      name: "Rishabh Panwar",
+      avatar: "https://media.licdn.com/dms/image/v2/D5603AQGRJEj9zXCbtQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701852334982?e=1766620800&v=beta&t=uvxQB8wl0M1MhI7OMz4CDsLYtXSvPRJ5CsUWTeU2dhc"
     },
     {
       text: "Highly professional and delivers work on time. Great experience!",
-      name: "Sneha Kapoor",
-      avatar: "https://i.pravatar.cc/150?img=12"
-    },
-    {
-      text: "Outstanding React and frontend skills. The project turned out amazing!",
-      name: "Aman Singh",
-      avatar: "https://i.pravatar.cc/150?img=56"
-    },
-    {
-      text: "Clean, modern design. Smooth animations. Loved it!",
-      name: "Priya Sharma",
-      avatar: "https://i.pravatar.cc/150?img=47"
+      name: "Ayushi",
+      avatar: "https://p1.hiclipart.com/preview/583/854/345/woman-hair-female-anonymous-silhouette-avatar-user-profile-girl-face-png-clipart.jpg"
     },
     {
       text: "Great communication and very creative approach.",
-      name: "Arjun Mehta",
-      avatar: "https://i.pravatar.cc/150?img=21"
+      name: "Priyanshu Prajapat",
+      avatar: "https://media.licdn.com/dms/image/v2/D4D03AQHGxkedED3p1Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728441200708?e=1766620800&v=beta&t=s88Xi2c2Xij3aSuCOle2UASVTwrbpWo7Izi4bZjR_-s"
+    },
+    {
+      text: "Outstanding React and frontend skills. The project turned out amazing!",
+      name: "Tanya",
+      avatar: "https://p1.hiclipart.com/preview/583/854/345/woman-hair-female-anonymous-silhouette-avatar-user-profile-girl-face-png-clipart.jpg"
+    },
+    {
+      text: "Clean, modern design. Smooth animations. Loved it!",
+      name: "Naveen Suthar",
+      avatar: "https://media.licdn.com/dms/image/v2/D5603AQEmfu3Dhpuo6w/profile-displayphoto-crop_800_800/B56Zl7oHZFG4AI-/0/1758715738178?e=1766620800&v=beta&t=hVx62Ytv1zpys7rIkRQiz6ulS_MKvfeYxUpT6EivdVE"
     },
   ];
 
@@ -244,7 +244,7 @@ const About = () => {
           </div>
           <div className="flex items-center gap-2">
             <h2 className="text-6xl md:text-7xl text-blue-600 font-bold font-[Montserrat]">
-              {countInView && <CountUp end={3} duration={1.5} suffix="K" />}s
+              {countInView && <CountUp end={3} duration={1.5} suffix="K" />}
             </h2>
             <div className="text-3xl md:text-4xl font-light">|</div>
             <p className="text-sm md:text-md font-[Playfair_Display] w-20">
@@ -287,7 +287,7 @@ const About = () => {
             </p>
           </div>
 
-          <button className="relative group overflow-hidden bg-[#5271FF] text-white font-medium px-6 py-4 rounded-4xl flex items-center gap-2 transition-all duration-300 ease-in-out w-full md:w-[30%] justify-center">
+          <button  onClick={() => navigate("/services")}  className="relative group overflow-hidden bg-[#5271FF] text-white font-medium px-6 py-4 rounded-4xl flex items-center gap-2 transition-all duration-300 ease-in-out w-full md:w-[30%] justify-center">
             <span className="z-10 flex items-center gap-2 relative">
               <ArrowRightFromLine />
               Services & Pricing

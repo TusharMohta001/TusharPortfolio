@@ -101,7 +101,7 @@ function MainContent({ theme, toggleTheme }) {
             <Route path="/services" element={<Services />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:title" element={<BlogDetails />} />
+            <Route path="/blog/:id" element={<BlogDetails />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

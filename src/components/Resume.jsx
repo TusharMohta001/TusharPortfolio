@@ -1,4 +1,4 @@
-  import {
+import {
   FaPhoneAlt,
   FaEnvelope,
   FaGlobe,
@@ -49,7 +49,10 @@ export default function App() {
                 <FaEnvelope /> tusharmohta001@gmail.com
               </p>
               <p className="flex items-center gap-2">
-                <FaGlobe /> <a href="#" className="underline">yourwebsite.com</a>
+                <FaGithub /> <a href="https://github.com/TusharMohta001/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" underline cursor-pointer" >@/tusharmohta001</a>
               </p>
               <p className="flex items-center gap-2">
                 <FaMapMarkerAlt /> Bikaner, India
@@ -95,7 +98,7 @@ export default function App() {
                       </span>
                     </div>
                     <ul className="list-disc pl-1 mt-2 ml-5 sm:ml-10 text-sm sm:text-md Poppins space-y-1">
-                    <li className='my-2 text-md Poppins'>Developed responsive user interfaces using React.js</li> <li className='my-2 text-md Poppins'>Integrated APIs and managed version control with Git</li> <li className='my-2 text-md Poppins'>Collaborated with UI/UX designers</li> <li className='my-2 text-md Poppins'>Built responsive and reusable UI components using React.js and Tailwind CSS</li> <li className='my-2 text-md Poppins'>Integrated RESTful APIs and managed application state efficiently</li> <li className='my-2 text-md Poppins'>Used Git and GitHub for version control and collaborated via pull requests</li> <li className='my-2 text-md Poppins'>Participated in Agile stand-ups and sprint planning meetings</li> <li className='my-2 text-md Poppins'>Worked closely with designers to convert Figma designs into functional UI</li> <li className='my-2 text-md Poppins'>Optimized website performance and ensured cross-browser compatibility</li>
+                      <li className='my-2 text-md Poppins'>Developed responsive user interfaces using React.js</li> <li className='my-2 text-md Poppins'>Integrated APIs and managed version control with Git</li> <li className='my-2 text-md Poppins'>Collaborated with UI/UX designers</li> <li className='my-2 text-md Poppins'>Built responsive and reusable UI components using React.js and Tailwind CSS</li> <li className='my-2 text-md Poppins'>Integrated RESTful APIs and managed application state efficiently</li> <li className='my-2 text-md Poppins'>Used Git and GitHub for version control and collaborated via pull requests</li> <li className='my-2 text-md Poppins'>Participated in Agile stand-ups and sprint planning meetings</li> <li className='my-2 text-md Poppins'>Worked closely with designers to convert Figma designs into functional UI</li> <li className='my-2 text-md Poppins'>Optimized website performance and ensured cross-browser compatibility</li>
                     </ul>
                   </div>
 
@@ -105,7 +108,7 @@ export default function App() {
                       <span className="text-sm dark:text-[#a6a6a6]">BJS College | 2024</span>
                     </div>
                     <ul className="list-disc pl-1 mt-2 ml-5 sm:ml-10 text-sm sm:text-md Poppins space-y-1">
-                    <li className='my-2 text-md Poppins'>Led a team for a 24-hour hackathon challenge</li> <li className='my-2 text-md Poppins'>Managed UI design and project deployment</li> <li className='my-2 text-md Poppins'>Collaborated with team members to build a full-stack web application under tight deadlines</li> <li className='my-2 text-md Poppins'>Actively contributed to front-end development and real-time problem-solving</li> <li className='my-2 text-md Poppins text-green-400'>Secured 1st position among all participating teams</li>
+                      <li className='my-2 text-md Poppins'>Led a team for a 24-hour hackathon challenge</li> <li className='my-2 text-md Poppins'>Managed UI design and project deployment</li> <li className='my-2 text-md Poppins'>Collaborated with team members to build a full-stack web application under tight deadlines</li> <li className='my-2 text-md Poppins'>Actively contributed to front-end development and real-time problem-solving</li> <li className='my-2 text-md Poppins text-green-400'>Secured 1st position among all participating teams</li>
                     </ul>
                   </div>
                 </div>
@@ -153,7 +156,7 @@ export default function App() {
                     </h3>
                     <p>React, Tailwind CSS, LocalStorage</p>
                     <p className="ml-5 sm:ml-10">
-                    Created a frontend-only e-commerce app using LocalStorage for cart and wishlist management. 
+                      Created a frontend-only e-commerce app using LocalStorage for cart and wishlist management.
                     </p>
                   </div>
                 </div>
@@ -161,13 +164,13 @@ export default function App() {
 
               {/* Social Links */}
               <div className="hidden md:flex flex-wrap gap-4 sm:gap-6  mt-8 text-blue-400 text-sm justify-center border-t pt-6 border-gray-600">
-                <a href="#" className="flex items-center gap-1">
+                <a href="https://github.com/TusharMohta001/" target="_blank" className="flex items-center gap-1">
                   <FaGithub /> github.com/tusharmohta
                 </a>
-                <a href="#" className="flex items-center gap-1">
+                <a href="https://www.linkedin.com/in/tushar-mohta-b5409733a/" target="_blank" className="flex items-center gap-1">
                   <FaLinkedin /> linkedin.com/in/tusharmohta
                 </a>
-                <a href="#" className="flex items-center gap-1">
+                <a href="https://x.com/TusharMohta001" target="_blank" className="flex items-center gap-1">
                   <FaTwitter /> @tusharmohta
                 </a>
               </div>
