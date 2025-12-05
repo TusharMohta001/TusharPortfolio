@@ -7,5 +7,9 @@ export default defineConfig({
   plugins: [react(),tailwindcss()],
   server:{
     host:true
+  },
+   build: {
+    // Increase the warning limit to 2 MB
+    chunkSizeWarningLimit: 2000
   }
 })
