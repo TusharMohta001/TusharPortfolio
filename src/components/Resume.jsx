@@ -60,7 +60,7 @@ export default function App() {
           {/* Summary */}
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6 mt-10 border-t border-gray-600 pt-8">
             <img
-              src="./public/images/TUSHAR.png"
+              src="/images/TUSHAR.png"
               alt="Tushar Mohta"
               className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full border-4 border-blue-500 object-cover object-top mx-auto md:mx-0"
             />
