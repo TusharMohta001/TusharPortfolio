@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader"; // 👈 import here
-import { BrowserRouter as Router,HashRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
@@ -90,7 +90,6 @@ function MainContent({ theme, toggleTheme }) {
       <Sidebar />
       <div className="flex-1 flex flex-col">
         <main className="p-6 overflow-y-auto">
-        <HashRouter>
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/projects" element={<Portfolio />} />
@@ -102,7 +101,6 @@ function MainContent({ theme, toggleTheme }) {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-          </HashRouter>
         </main>
       </div>
     </div>
