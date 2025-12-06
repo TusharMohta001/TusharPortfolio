@@ -71,7 +71,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="px-4 py-16 md:px-10">
+    <section className=" py-16 md:px-10">
 
       {/* Intro Section */}
       <div className="text-center mb-16">
@@ -131,7 +131,7 @@ const Services = () => {
       </div>
 
       {/* FAQ Section */}
-      <div className="grid md:grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-2  gap-10">
         <div>
           <h3 className="text-2xl md:text-3xl font-bold border-l-4 border-blue-500 pl-2 mb-4">
             Have any questions?

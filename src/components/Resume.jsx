@@ -26,7 +26,7 @@ export default function App() {
       </div>
 
       {/* Main Resume Section */}
-      <div className="font-sans sm:px-6 md:px-8 lg:px-12 py-10">
+      <div className="font-sans sm:px- md:px-8 lg:px-12 py-10">
         <div className="max-w-6xl mx-auto dark:bg-[#3a3a3a] bg-[#e2e2e2] rounded-2xl shadow-xl p-6 sm:p-10 md:p-12">
           {/* Header */}
           <div className="flex flex-col lg:flex-row justify-between gap-6">

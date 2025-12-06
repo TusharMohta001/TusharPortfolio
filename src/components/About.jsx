@@ -262,7 +262,7 @@ const About = () => {
 
 
       {/* ========== WHAT I DO SECTION ========== */}
-      <div className="px-1 md:px-10 mt-20">
+      <div className="md:px-10 mt-20">
         <div className="flex flex-col md:flex-row items-end justify-between gap-6">
           <div>
             <div className="text-6xl mr-2 text-[#5271FF] font-light float-left">
@@ -271,7 +271,7 @@ const About = () => {
             <h1 className="play text-5xl md:text-6xl font-bold mb-6">
               What I do
             </h1>
-            <p className="w-full md:w-[80%] Mons text-md ">
+            <p className="w-full md:w-[90%] Mons text-md ">
               I have more than 3 years experience building software for clients
               all over the world. Below is a quick overview of my main technical
               skill sets and technologies I use. Want to find out more about my
@@ -302,7 +302,7 @@ const About = () => {
     <div
       key={index}
       onMouseMove={handleMove}
-      className="skill-pro w-[210px] sm:w-[45%] md:w-[330px] h-[300px]
+      className="skill-pro w-[280px] sm:w-[45%] md:w-[330px] h-[300px]
       rounded-xl p-5 transition-all duration-300
       bg-white dark:bg-[#2C2C2C]"
     >

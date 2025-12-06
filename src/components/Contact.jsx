@@ -38,7 +38,7 @@ const Contact = () => {
 
 
   return (
-    <section className="py-16 px-4 md:px-10">
+    <section className="py-16 md:px-10">
 
       {/* Section Heading */}
       <div className="text-center mb-16">
