@@ -9,7 +9,7 @@ const blogs = [
       "description2": "A step-by-step tutorial for building a project using React.",
       "short_description": "Learn React with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about React, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/react-demo1.jpg",
+      "image2": "/images/ex2.jpg",
       "slug":"react_blog",
       "points": [
         "Introduction to React",
@@ -19,7 +19,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a React based application with advanced features.",
-      "video": "https://youtube.com/embed/react-tutorial-video1",
+      "video": "https://www.youtube.com/embed/3LRZRSIh_KE?si=yV1jSH7LzeZSQ9jb",
       "tags": [
         "React",
         "Frontend",
@@ -30,14 +30,14 @@ const blogs = [
     {
        "id":2,
       "title": "Next.js Mastery Guide 2024",
-      "image1": "/images/blog3.png",
+      "image1": "/images/blog2.jpg",
       "date": "2024-01-31",
       "article": "In this blog, we explore Next.js and how it's revolutionizing frontend development in 2024. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into Next.js fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using Next.js.",
       "short_description": "Learn Next.js with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about Next.js, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/next.js-demo3.jpg",
+      "image2": "/images/ex3.jpg",
       "points": [
         "Introduction to Next.js",
         "Project setup and structure",
@@ -46,7 +46,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a Next.js based application with advanced features.",
-      "video": "https://youtube.com/embed/next.js-tutorial-video3",
+      "video": "https://www.youtube.com/embed/MmdwakT-Ve8?si=yAtQv5lt0__oRFex",
       "tags": [
         "Next.js",
         "Fullstack",
@@ -56,14 +56,14 @@ const blogs = [
     {
        "id":3,
       "title": "GSAP Mastery Guide 2025",
-      "image1": "/images/blog4.png",
+      "image1": "/images/blog3.png",
       "date": "2024-02-15",
       "article": "In this blog, we explore GSAP and how it's revolutionizing frontend development in 2025. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into GSAP fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using GSAP.",
       "short_description": "Learn GSAP with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about GSAP, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/gsap-demo4.jpg",
+      "image2": "/images/ex1.jpg",
       "points": [
         "Introduction to GSAP",
         "Project setup and structure",
@@ -72,7 +72,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a GSAP based application with advanced features.",
-      "video": "https://youtube.com/embed/gsap-tutorial-video4",
+      "video": "https://www.youtube.com/embed/AW1yfBKRMKc?si=gvM-_BNgN0plDqi-",
       "tags": [
         "GSAP",
         "Animations",
@@ -82,14 +82,14 @@ const blogs = [
     {
        "id":4,
       "title": "JavaScript Mastery Guide 2024",
-      "image1": "/images/blog5.png",
+      "image1": "/images/blog4.png",
       "date": "2024-03-01",
       "article": "In this blog, we explore JavaScript and how it's revolutionizing frontend development in 2024. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into JavaScript fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using JavaScript.",
       "short_description": "Learn JavaScript with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about JavaScript, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/javascript-demo5.jpg",
+      "image2": "/images/ex4.jpg",
       "points": [
         "Introduction to JavaScript",
         "Project setup and structure",
@@ -98,7 +98,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a JavaScript based application with advanced features.",
-      "video": "https://youtube.com/embed/javascript-tutorial-video5",
+      "video": "https://www.youtube.com/embed/lfmg-EJ8gm4?si=LC6MD_XMiCdjlfxx",
       "tags": [
         "JavaScript",
         "ES2024",
@@ -115,7 +115,7 @@ const blogs = [
       "description2": "A step-by-step tutorial for building a project using ResponsiveDesign.",
       "short_description": "Learn ResponsiveDesign with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about ResponsiveDesign, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/responsivedesign-demo6.jpg",
+      "image2": "/images/ex7.jpg",
       "points": [
         "Introduction to ResponsiveDesign",
         "Project setup and structure",
@@ -124,7 +124,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a ResponsiveDesign based application with advanced features.",
-      "video": "https://youtube.com/embed/responsivedesign-tutorial-video6",
+      "video": "https://www.youtube.com/embed/l04dDYW-QaI?si=sgSH7JaJdxEsWygx",
       "tags": [
         "ResponsiveDesign",
         "MobileFirst",
@@ -134,14 +134,14 @@ const blogs = [
     {
        "id":6,
       "title": "APIs Mastery Guide 2024",
-      "image1": "/images/blog6.png",
+      "image1": "/images/blog16.jpg",
       "date": "2024-03-31",
       "article": "In this blog, we explore APIs and how it's revolutionizing frontend development in 2024. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into APIs fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using APIs.",
       "short_description": "Learn APIs with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about APIs, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/apis-demo7.jpg",
+      "image2": "/images/ex5.jpg",
       "points": [
         "Introduction to APIs",
         "Project setup and structure",
@@ -150,7 +150,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a APIs based application with advanced features.",
-      "video": "https://youtube.com/embed/apis-tutorial-video7",
+      "video": "https://www.youtube.com/embed/ZveW4_ZJtVY?si=fdZ-4BxyEJyTMccf",
       "tags": [
         "APIs",
         "Integration",
@@ -161,14 +161,14 @@ const blogs = [
     {
        "id":7,
       "title": "Firebase Mastery Guide 2025",
-      "image1": "/images/blog7.png",
+      "image1": "/images/blog10.png",
       "date": "2024-04-15",
       "article": "In this blog, we explore Firebase and how it's revolutionizing frontend development in 2025. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into Firebase fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using Firebase.",
       "short_description": "Learn Firebase with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about Firebase, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/firebase-demo8.jpg",
+      "image2": "/images/ex2.jpg",
       "points": [
         "Introduction to Firebase",
         "Project setup and structure",
@@ -177,7 +177,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a Firebase based application with advanced features.",
-      "video": "https://youtube.com/embed/firebase-tutorial-video8",
+      "video": "https://www.youtube.com/embed/vAoB4VbhRzM?si=LKNB3iw-bv_Y9QBn",
       "tags": [
         "Firebase",
         "Auth",
@@ -194,7 +194,7 @@ const blogs = [
       "description2": "A step-by-step tutorial for building a project using ReactNative.",
       "short_description": "Learn ReactNative with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about ReactNative, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/reactnative-demo9.jpg",
+      "image2": "/images/ex8.jpg",
       "points": [
         "Introduction to ReactNative",
         "Project setup and structure",
@@ -203,7 +203,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a ReactNative based application with advanced features.",
-      "video": "https://youtube.com/embed/reactnative-tutorial-video9",
+      "video": "https://www.youtube.com/embed/gvkqT_Uoahw?si=_h8Q6OAVhCAFDFsQ",
       "tags": [
         "ReactNative",
         "Mobile",
@@ -220,7 +220,7 @@ const blogs = [
       "description2": "A step-by-step tutorial for building a project using TypeScript.",
       "short_description": "Learn TypeScript with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about TypeScript, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/typescript-demo10.jpg",
+      "image2": "/images/ex4.jpg",
       "points": [
         "Introduction to TypeScript",
         "Project setup and structure",
@@ -229,7 +229,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a TypeScript based application with advanced features.",
-      "video": "https://youtube.com/embed/typescript-tutorial-video10",
+      "video": "https://www.youtube.com/embed/zQnBQ4tB3ZA?si=us5SbMmFe_4Dyt-q",
       "tags": [
         "TypeScript",
         "JSX",
@@ -239,14 +239,14 @@ const blogs = [
     {
        "id":10,
       "title": "SASS Mastery Guide 2024",
-      "image1": "/images/blog10.png",
+      "image1": "/images/blog11.png",
       "date": "2024-05-30",
       "article": "In this blog, we explore SASS and how it's revolutionizing frontend development in 2024. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into SASS fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using SASS.",
       "short_description": "Learn SASS with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about SASS, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/sass-demo11.jpg",
+      "image2": "/images/ex3.jpg",
       "points": [
         "Introduction to SASS",
         "Project setup and structure",
@@ -255,7 +255,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a SASS based application with advanced features.",
-      "video": "https://youtube.com/embed/sass-tutorial-video11",
+      "video": "https://www.youtube.com/embed/_a5j7KoflTs?si=Y2ev8B0hqWY-LGY0",
       "tags": [
         "SASS",
         "CSS",
@@ -265,14 +265,14 @@ const blogs = [
     {
        "id":11,
       "title": "Redux Mastery Guide 2025",
-      "image1": "https://example.com/images/redux-cover12.jpg",
+      "image1": "https://images.unsplash.com/photo-1727434032765-9c4df88b6e02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzY0fHx0ZWNofGVufDB8fDB8fHww",
       "date": "2024-06-14",
       "article": "In this blog, we explore Redux and how it's revolutionizing frontend development in 2025. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into Redux fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using Redux.",
       "short_description": "Learn Redux with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about Redux, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/redux-demo12.jpg",
+      "image2": "/images/ex8.jpg",
       "points": [
         "Introduction to Redux",
         "Project setup and structure",
@@ -281,7 +281,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a Redux based application with advanced features.",
-      "video": "https://youtube.com/embed/redux-tutorial-video12",
+      "video": "https://www.youtube.com/embed/_shA5Xwe8_4?si=QuGn9vDhRFJun8Qo",
       "tags": [
         "Redux",
         "StateManagement",
@@ -291,14 +291,14 @@ const blogs = [
     {
        "id":12,
       "title": "Node.js Mastery Guide 2024",
-      "image1": "https://example.com/images/node.js-cover13.jpg",
+      "image1": "/images/blog7.png",
       "date": "2024-06-29",
       "article": "In this blog, we explore Node.js and how it's revolutionizing frontend development in 2024. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into Node.js fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using Node.js.",
       "short_description": "Learn Node.js with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about Node.js, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/node.js-demo13.jpg",
+      "image2": "/images/ex1.jpg",
       "points": [
         "Introduction to Node.js",
         "Project setup and structure",
@@ -307,7 +307,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a Node.js based application with advanced features.",
-      "video": "https://youtube.com/embed/node.js-tutorial-video13",
+      "video": "https://www.youtube.com/embed/Oe421EPjeBE?si=OR_UTaU-eng4KLfJ",
       "tags": [
         "Node.js",
         "Express",
@@ -324,7 +324,7 @@ const blogs = [
       "description2": "A step-by-step tutorial for building a project using TailwindCSS.",
       "short_description": "Learn TailwindCSS with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about TailwindCSS, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/tailwindcss-demo2.jpg",
+      "image2": "/images/ex5.jpg",
       
       "points": [
         "Introduction to TailwindCSS",
@@ -334,7 +334,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a TailwindCSS based application with advanced features.",
-      "video": "https://youtube.com/embed/tailwindcss-tutorial-video2",
+      "video": "https://www.youtube.com/embed/6biMWgD6_JY?si=holK4bHPCR1WMjgV",
       "tags": [
         "TailwindCSS",
         "Vite",
@@ -344,14 +344,14 @@ const blogs = [
     {
        "id":14,
       "title": "MongoDB Mastery Guide 2025",
-      "image1": "https://example.com/images/mongodb-cover14.jpg",
+      "image1": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRlY2h8ZW58MHx8MHx8fDA%3D",
       "date": "2024-07-14",
       "article": "In this blog, we explore MongoDB and how it's revolutionizing frontend development in 2025. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into MongoDB fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using MongoDB.",
       "short_description": "Learn MongoDB with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about MongoDB, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/mongodb-demo14.jpg",
+      "image2": "/images/ex3.jpg",
       "points": [
         "Introduction to MongoDB",
         "Project setup and structure",
@@ -360,7 +360,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a MongoDB based application with advanced features.",
-      "video": "https://youtube.com/embed/mongodb-tutorial-video14",
+      "video": "https://www.youtube.com/embed/-bt_y4Loofg?si=lCPsr4jOn_PMvwBa",
       "tags": [
         "MongoDB",
         "MERN",
@@ -370,14 +370,14 @@ const blogs = [
     {
        "id":15,
       "title": "Jest Mastery Guide 2024",
-      "image1": "https://example.com/images/jest-cover15.jpg",
+      "image1": "https://plus.unsplash.com/premium_photo-1683120972279-87efe2ba252f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHRlY2h8ZW58MHx8MHx8fDA%3D",
       "date": "2024-07-29",
       "article": "In this blog, we explore Jest and how it's revolutionizing frontend development in 2024. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into Jest fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using Jest.",
       "short_description": "Learn Jest with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about Jest, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/jest-demo15.jpg",
+      "image2": "/images/ex6.jpg",
       "points": [
         "Introduction to Jest",
         "Project setup and structure",
@@ -386,7 +386,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a Jest based application with advanced features.",
-      "video": "https://youtube.com/embed/jest-tutorial-video15",
+      "video": "https://www.youtube.com/embed/BQqzfHQkREo?si=RxCtYHuR_ear8vCE",
       "tags": [
         "Jest",
         "Testing",
@@ -396,14 +396,14 @@ const blogs = [
     {
        "id":16,
       "title": "Portfolio Mastery Guide 2025",
-      "image1": "https://example.com/images/portfolio-cover16.jpg",
+      "image1": "https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "date": "2024-08-13",
       "article": "In this blog, we explore Portfolio and how it's revolutionizing frontend development in 2025. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into Portfolio fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using Portfolio.",
       "short_description": "Learn Portfolio with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about Portfolio, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/portfolio-demo16.jpg",
+      "image2": "/images/ex2.jpg",
       "points": [
         "Introduction to Portfolio",
         "Project setup and structure",
@@ -412,7 +412,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a Portfolio based application with advanced features.",
-      "video": "https://youtube.com/embed/portfolio-tutorial-video16",
+      "video": "https://youtube.com/shorts/9XFdaTPTlBs?si=AzSV1GbRd55-4dpG",
       "tags": [
         "Portfolio",
         "PersonalSite",
@@ -422,14 +422,14 @@ const blogs = [
     {
        "id":17,
       "title": "GraphQL Mastery Guide 2024",
-      "image1": "https://example.com/images/graphql-cover17.jpg",
+      "image1": "https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww",
       "date": "2024-08-28",
       "article": "In this blog, we explore GraphQL and how it's revolutionizing frontend development in 2024. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into GraphQL fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using GraphQL.",
       "short_description": "Learn GraphQL with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about GraphQL, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/graphql-demo17.jpg",
+      "image2": "/images/ex4.jpg",
       "points": [
         "Introduction to GraphQL",
         "Project setup and structure",
@@ -438,7 +438,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a GraphQL based application with advanced features.",
-      "video": "https://youtube.com/embed/graphql-tutorial-video17",
+      "video": "https://www.youtube.com/embed/eIQh02xuVw4?si=3vVtGGL5xQ7Vr3m7",
       "tags": [
         "GraphQL",
         "API",
@@ -448,14 +448,14 @@ const blogs = [
     {
        "id":18,
       "title": "Bootstrap Mastery Guide 2025",
-      "image1": "https://example.com/images/bootstrap-cover18.jpg",
+      "image1": "https://images.unsplash.com/photo-1597733336794-12d05021d510?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaHxlbnwwfHwwfHx8MA%3D%3D",
       "date": "2024-09-12",
       "article": "In this blog, we explore Bootstrap and how it's revolutionizing frontend development in 2025. You\u2019ll build a project, learn best practices, and optimize performance.",
       "description1": "Deep dive into Bootstrap fundamentals and advanced use cases.",
       "description2": "A step-by-step tutorial for building a project using Bootstrap.",
       "short_description": "Learn Bootstrap with hands-on examples.",
       "long_description": "This blog walks through everything you need to know about Bootstrap, including configuration, development workflow, and real-world implementation.",
-      "image2": "https://example.com/images/bootstrap-demo18.jpg",
+      "image2": "/images/ex6.jpg",
       "points": [
         "Introduction to Bootstrap",
         "Project setup and structure",
@@ -464,7 +464,7 @@ const blogs = [
         "Final project demo"
       ],
       "example": "Created a Bootstrap based application with advanced features.",
-      "video": "https://youtube.com/embed/bootstrap-tutorial-video18",
+      "video": "https://www.youtube.com/embed/Jyvffr3aCp0?si=MxH_3CDVC5YSWivX",
       "tags": [
         "Bootstrap",
         "CSSFramework",
