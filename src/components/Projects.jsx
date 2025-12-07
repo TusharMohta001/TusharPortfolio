@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import allProjects from "../Data/projects";
 import { Link } from "react-router-dom";
 
-const filters = ["All", "Desigin", "Mobile App", "Frontend", "Backend"];
+const filters = ["All", "Desigin", "Animation", "Frontend", "Backend"];
 
 const Projects = () => {
   const [selected, setSelected] = useState("All");
@@ -27,9 +27,7 @@ const Projects = () => {
           best creations.
         </p>
         <button
-          onClick={() =>
-            document.getElementById("contact-section")?.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={() => window.location.href = "mailto:tusharmohta001@gmail.com"}
           className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold"
         >
           🚀 Hire Me

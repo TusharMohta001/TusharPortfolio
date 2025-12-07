@@ -6,7 +6,6 @@ import allProjects from "../Data/projects";
 const ProjectDetails = () => {
   const { title } = useParams();
 
-  // decode URL-friendly title (because spaces become %20)
   const decodedTitle = decodeURIComponent(title);
   const project = allProjects.find((p) => p.title === decodedTitle);
 
@@ -19,7 +18,7 @@ const ProjectDetails = () => {
   }
 
   return (
-    <section className=" py-0 px-5 md:px-20 dark:bg-[#292929] bg-gray-100">
+    <section className=" py-0 px-5 md:p-10 dark:bg-[#292929] bg-gray-100">
       <Link
         to="/projects"
         className="text-blue-500 hover:underline mb-5 inline-block"
@@ -55,14 +54,49 @@ const ProjectDetails = () => {
           {project.longDescription}
         </p>
 
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
-        >
-          🔗 View Live Project
-        </a>
+        {/* --- Buttons Section --- */}
+       <div className="flex gap-5">
+
+  {/* Live Project Button — Filled */}
+  <a
+    href={project.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      px-6 py-3 rounded-full 
+      bg-blue-600 text-white 
+      hover:bg-blue-700 
+      transition
+      dark:bg-blue-500 dark:hover:bg-blue-600
+    "
+  >
+    🔗 View Live Project
+  </a>
+
+  {/* GitHub Button — Outline */}
+  {project.github && (
+    <a
+      href={project.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        px-6 py-3 rounded-full 
+        border-2 
+        border-gray-800 text-gray-800 
+        hover:bg-gray-800 hover:text-white 
+        transition
+
+        /* Dark Mode */
+        dark:border-white dark:text-white
+        dark:hover:bg-white dark:hover:text-black
+      "
+    >
+      🐙 View on GitHub
+    </a>
+  )}
+
+</div>
+
       </div>
     </section>
   );

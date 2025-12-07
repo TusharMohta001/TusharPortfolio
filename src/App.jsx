@@ -3,7 +3,7 @@ import Loader from "./components/Loader";
 import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import About from "./components/About";
-import Portfolio from "./components/Portfolio";
+import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Resume from "./components/Resume";
 import Blog from "./components/Blog";
@@ -96,7 +96,7 @@ function MainContent({ theme, toggleTheme }) {
         <main className="p-6 overflow-y-auto">
           <Routes>
             <Route path="/" element={<About />} />
-            <Route path="/projects" element={<Portfolio />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:title" element={<ProjectDetails />} />
             <Route path="/services" element={<Services />} />
             <Route path="/resume" element={<Resume />} />
